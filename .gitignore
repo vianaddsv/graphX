@@ -1,0 +1,11 @@
+# Dados da MEDLINE e diretórios de massa de dados
+medline_data/
+/medline_data
+
+*.log
+
+#*#
+.elc
+.DS_Store
+.vscode/
+.idea/
