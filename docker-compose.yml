@@ -1,0 +1,15 @@
+services:
+  spark-env:
+    image: bitnamilegacy/spark:3.5.1
+    container_name: spark_medline_env
+    volumes:
+      - ./medline_data:/dados_medline
+      - ./:/app/codigo
+    stdin_open: true
+    tty: true
+    command: >
+      spark-shell
+      --packages org.scala-lang.modules:scala-xml_2.12:2.1.0,edu.umd:cloud9:1.5.0
+      --driver-memory 8g
+      --executor-memory 8g
+      --conf spark.memory.fraction=0.8
