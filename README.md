@@ -103,7 +103,7 @@ scala> RunGraph.main(Array())
 ```text
 .
 ├── RunGraph.scala        # Algoritmo de processamento em GraphX
-├── baixar_dados.sh       # Script de automação do download do dataset
+├── download_file.sh       # Script de automação do download do dataset
 ├── docker-compose.yml    # Configuração do ambiente Spark
 ├── .gitignore            # Regras de exclusão do Git
 ├── README.md             # Documentação do projeto
